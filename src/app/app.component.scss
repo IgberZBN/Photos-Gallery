@@ -1,0 +1,21 @@
+#content {
+  display: grid;
+  grid-template:
+    ". nav ."
+    ". main ."
+    "footer footer footer";
+  grid-template-rows: 10vh repeat(1, minmax(80vh, 2fr)) 10vh;
+  grid-template-columns: 0.3fr 3fr 0.3fr;
+}
+
+router-outlet {
+  grid-area: main;
+}
+
+app-footer {
+  grid-area: footer;
+}
+
+app-nav {
+  grid-area: nav;
+}
