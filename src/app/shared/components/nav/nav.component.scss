@@ -1,0 +1,27 @@
+@use "variables" as va;
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+
+  text-transform: uppercase;
+
+  h1 {
+    color: va.$coral-red;
+  }
+
+  ul {
+    display: flex;
+    gap: 25px;
+  }
+
+  li:hover {
+    a {
+      color: va.$black;
+    }
+  }
+}
