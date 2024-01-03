@@ -19,7 +19,7 @@
           "options": {
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/app/shared/stylings"
+                "src/app/styles"
               ]
             },
             "outputPath": "dist/photos-gallery",
