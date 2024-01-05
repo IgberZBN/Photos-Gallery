@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { RouterModule } from "@angular/router";
 
 @Component({
-  selector: 'app-nav',
+  selector: "app-nav",
   standalone: true,
-  imports: [],
-  templateUrl: './nav.component.html',
-  styleUrl: './nav.component.scss'
+  imports: [RouterModule],
+  templateUrl: "./nav.component.html",
+  styleUrl: "./nav.component.scss",
 })
 export class NavComponent {
-
 }

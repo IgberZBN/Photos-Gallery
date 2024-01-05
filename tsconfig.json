@@ -25,7 +25,9 @@
     "baseUrl": ".",
     "paths": {
       "@shared/*": ["./src/app/shared/*"],
-      "@shared/components/*": ["./src/app/shared/components/*"]
+      "@shared/components/*": ["./src/app/shared/components/*"],
+      "@pages/*": ["./src/app/pages/*"],
+      "@components/*": ["./src/app/components/*"]
     }
   },
   "angularCompilerOptions": {
