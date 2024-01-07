@@ -1,0 +1,24 @@
+@use "mixins" as mx;
+
+.card {
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+}
+
+.bg {
+  @include mx.fullscreen;
+  @include mx.center(fixed, 50%, 50%);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.card-fullscreen {
+  @include mx.center(fixed, 50%, 50%);
+  @include mx.width(90%, 500px);
+  @include mx.height(90%, 500px);
+}
+
+img {
+  border-radius: 11px;
+}

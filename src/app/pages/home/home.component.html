@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="card-container" *ngFor="let image of images.slice(0, limit)">
+    <app-card [url]="image"></app-card>
+  </div>
+</div>
+
+@if (images.length > limit) {
+  <button type="button" (click)="loadMoreImages()">Load more</button>
+}

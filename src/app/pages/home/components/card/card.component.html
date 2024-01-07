@@ -1,0 +1,11 @@
+<div class="card" (click)="openFullView()">
+  <img [src]="url" [alt]="title" />
+</div>
+
+@if (fullScreen) {
+  <div class="bg" (click)="closeFullScreen()">
+    <div class="card-fullscreen">
+      <img [src]="url" [alt]="title" />
+    </div>
+  </div>
+}

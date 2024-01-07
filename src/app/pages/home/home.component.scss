@@ -1,0 +1,18 @@
+@use "variables" as va;
+@use "mixins" as mx;
+
+.container {
+  @include mx.full;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(90%, 400px), 1fr));
+  gap: 20px;
+}
+
+button {
+  @include mx.center(absolute, 50%);
+  background: va.$coral-red;
+  bottom: 20px;
+  padding: 11px;
+  border-radius: 7px;
+  color: white;
+}
