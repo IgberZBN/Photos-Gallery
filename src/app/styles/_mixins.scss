@@ -1,0 +1,36 @@
+@mixin center($position, $X-axis: 0, $Y-axis: 0) {
+  position: $position;
+  @if $X-axis != 0 {
+    left: $X-axis;
+  }
+  @if $Y-axis != 0 {
+    top: $Y-axis;
+  }
+  @if $X-axis == 0 {
+    transform: translateY(-$Y-axis);
+  } @else if $Y-axis == 0 {
+    transform: translateX(-$X-axis);
+  } @else {
+    transform: translate(-$X-axis, -$Y-axis);
+  }
+}
+
+@mixin fullscreen {
+  width: 100vw;
+  height: 100vh;
+}
+
+@mixin width($min, $max: $min) {
+  width: $min;
+  max-width: $max;
+}
+
+@mixin height($min, $max: $min) {
+  height: $min;
+  max-height: $max;
+}
+
+@mixin full {
+  width: 100%;
+  height: 100%;
+}

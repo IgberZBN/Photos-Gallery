@@ -1,6 +1,9 @@
+@use "variables" as va;
+@use "mixins" as mx;
+
 * {
   font-family: sans-serif;
-  color: #646464;
+  color: va.$granite-gray;
 }
 
 body,
@@ -16,9 +19,22 @@ ol {
   margin: 0;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
-  &::hover {
-    cursor: pointer;
-  }
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+img {
+  @include mx.full;
+  object-fit: cover;
+  vertical-align: bottom;
 }
