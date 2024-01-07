@@ -1,12 +1,12 @@
 @use "variables" as va;
+@use "mixins" as mx;
 
 nav {
+  @include mx.full;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  width: 100%;
-  height: 100%;
 
   text-transform: uppercase;
 
@@ -22,7 +22,10 @@ nav {
   li:hover {
     a {
       color: va.$black;
-      cursor: pointer;
     }
+  }
+
+  .active {
+    color: va.$black;
   }
 }

@@ -2,7 +2,12 @@
   <h1>Igber Benitez</h1>
   <ul>
     <li>
-      <a routerLink="/" routerLinkActive="active">Portfolio</a>
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Portfolio</a
+      >
     </li>
     <li>
       <a routerLink="/about" routerLinkActive="active">About</a>
