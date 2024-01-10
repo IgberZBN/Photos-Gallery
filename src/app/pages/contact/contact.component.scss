@@ -1,0 +1,71 @@
+@use "variables" as va;
+
+h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 11px;
+  &::after {
+    margin-left: 7px;
+    content: "(Required)";
+    font-weight: normal;
+    font-size: 12px;
+  }
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  color: va.$granite-gray;
+  border: 1px solid va.$granite-gray;
+  border-radius: 7px;
+  padding: 7px;
+  width: 100%;
+  &:focus {
+    color: va.$black;
+    border-color: va.$black;
+  }
+}
+
+textarea {
+  height: 200px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.form-name {
+  display: flex;
+  gap: 15px;
+
+  .content {
+    width: 50%;
+  }
+}
+
+.container-img {
+  width: 500px;
+  img {
+    border-radius: 12px;
+  }
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 11px;
+}
