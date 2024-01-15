@@ -1,5 +1,6 @@
 @use "variables" as va;
 @use "mixins" as mx;
+@use "breakpoints" as bp;
 
 .container {
   @include mx.full;
@@ -21,6 +22,12 @@
     .link {
       color: va.$black;
     }
+  }
+
+  @media screen and (max-width: bp.$small-screen) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 }
 
