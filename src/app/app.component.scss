@@ -1,4 +1,6 @@
-#content {
+@use "breakpoints" as bp;
+
+.container {
   display: grid;
   grid-template:
     ". nav ."
@@ -9,15 +11,30 @@
   gap: 10px 0;
 }
 
+.nav {
+  grid-area: nav;
+}
+
 .router-wrapper {
   grid-area: main;
   position: relative;
 }
 
-app-footer {
+.footer {
   grid-area: footer;
 }
 
-app-nav {
-  grid-area: nav;
+@media screen and (max-width: bp.$small-screen) {
+  .container {
+    grid-template:
+      "nav"
+      "main"
+      "footer";
+    grid-template-rows: 10vh repeat(1, minmax(80vh, 2fr)) 10vh;
+  }
+
+  .nav,
+  .router-wrapper {
+    padding: 0 10px;
+  }
 }
