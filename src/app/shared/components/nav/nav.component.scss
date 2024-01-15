@@ -1,31 +1,29 @@
 @use "variables" as va;
 @use "mixins" as mx;
 
-nav {
+.container {
   @include mx.full;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   text-transform: uppercase;
+}
 
-  h1 {
-    color: va.$coral-red;
-  }
+.title {
+  color: va.$coral-red;
+}
 
-  ul {
-    display: flex;
-    gap: 25px;
-  }
+.list {
+  display: flex;
+  gap: 25px;
 
-  li:hover {
-    a {
+  &-item:hover {
+    .link {
       color: va.$black;
     }
   }
+}
 
-  .active {
-    color: va.$black;
-  }
+.active {
+  color: va.$black;
 }

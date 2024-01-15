@@ -1,19 +1,30 @@
-<nav>
-  <h1>Igber Benitez</h1>
-  <ul>
-    <li>
+<nav class="container nav">
+  <h1 class="nav-title title">Gallery</h1>
+  <ul class="nav-list list">
+    <li class="nav-list-item list-item item">
       <a
+        class="nav-list-link list-item-link nav-link link"
         routerLink="/"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
         >Portfolio</a
       >
     </li>
-    <li>
-      <a routerLink="/about" routerLinkActive="active">About</a>
+    <li class="nav-list-item list-item item">
+      <a
+        class="nav-list-link list-item-link nav-link link"
+        routerLink="/about"
+        routerLinkActive="active"
+        >About</a
+      >
     </li>
-    <li>
-      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    <li class="nav-list-item list-item item">
+      <a
+        class="nav-list-link list-item-link nav-link link"
+        routerLink="/contact"
+        routerLinkActive="active"
+        >Contact</a
+      >
     </li>
   </ul>
 </nav>
