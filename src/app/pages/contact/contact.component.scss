@@ -1,8 +1,50 @@
 @use "variables" as va;
 
-h2 {
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.wrapper {
+  flex: 1 0 300px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
   text-transform: uppercase;
   font-weight: normal;
+}
+
+.form-name {
+  display: flex;
+  gap: 15px;
+
+  .content {
+    width: 50%;
+  }
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 11px;
+}
+
+.image {
+  height: 500px;
+  img {
+    width: 100%;
+    border-radius: 12px;
+  }
 }
 
 label {
@@ -33,39 +75,4 @@ textarea {
 
 textarea {
   height: 200px;
-}
-
-.form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-}
-
-.form-name {
-  display: flex;
-  gap: 15px;
-
-  .content {
-    width: 50%;
-  }
-}
-
-.container-img {
-  width: 500px;
-  img {
-    border-radius: 12px;
-  }
-}
-
-button {
-  background: black;
-  color: white;
-  padding: 11px;
 }
